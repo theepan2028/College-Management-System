@@ -1,0 +1,34 @@
+<div class="col-md-6 offset-md-3">
+    <h3>Add Fees</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Roll_Number</label>
+            <input type="text" class="form-control" id="roll_Number" name="roll_Number" [(ngModel)]="fees.roll_Number">
+        </div>
+<div class="form-group">
+    <label>Student_Name</label>
+    <input type="text" class="form-control" id="student_Name" name="student_Name" [(ngModel)]="fees.student_Name">
+</div>
+<div class="form-group">
+    <label>Course_Name</label>
+    <input type="text" class="form-control" id=" course_Name" name=" course_Name" [(ngModel)]="fees. course_Name">
+</div>
+<div class="form-group">
+    <label>Year</label>
+    <input type="text" class="form-control" id="year" name="year" [(ngModel)]="fees.year">
+</div>
+<div class="form-group">
+    <label>Phone_Number</label>
+    <input type="text" class="form-control" id="phone_Number" name="phone_Number" [(ngModel)]="fees.phone_Number">
+</div>
+<div class="form-group">
+    <label>PaidDate</label>
+    <input type="text" class="form-control" id="paidDate" name="paidDate" [(ngModel)]="fees.paidDate">
+</div>
+<div class="form-group">
+    <label>Total_Fees_Amount</label>
+    <input type="text" class="form-control" id="total_fees_amount" name="total_fees_amount" [(ngModel)]="fees.total_fees_amount">
+</div>
+<button class="btn btn-success" type="submit">Submit</button>
+    </form>
+    </div>

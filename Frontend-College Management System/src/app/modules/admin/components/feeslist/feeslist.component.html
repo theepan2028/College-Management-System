@@ -1,0 +1,38 @@
+<h2 id="a">Fees List!!</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Roll_Number</th>
+            
+            <th>Student_Name</th>
+            <th>Course_Name</th>
+            
+            <th>Year</th>
+            <th>Phone_Number</th>
+            <th>PaidDate</th>
+            <th>Total_Fees_Amount</th>
+            
+            
+            
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let fees of feess">
+            <td>{{fees.roll_Number}}</td>
+            <td>{{fees.student_Name}}</td>
+            <td>{{fees.course_Name}}</td>
+            <td>{{fees.year}}</td>
+            <td>{{fees.phone_Number}}</td>
+            <td>{{fees.paidDate}}</td>
+            <td>{{fees.total_fees_amount}}</td>
+            <td>
+                <button (click) = "updateFees(fees.id)" class = "btn btn-info"> Update</button>
+                <button (click) = "deleteFees(fees.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <button (click) = "feesDetails(fees.id)" class = "btn btn-info" style="margin-left: 10px"> View</button>
+            </td>
+    
+        </tr>
+    </tbody>
+</table>
+

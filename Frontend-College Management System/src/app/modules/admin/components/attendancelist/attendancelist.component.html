@@ -1,0 +1,38 @@
+<h2 id="a">Attendance List!!</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Student_name</th>
+            <th>Course_name</th>
+            <th>Year</th>
+            <th>Branch</th>
+            <th>RollNumber</th>
+            <th>Attendance_date</th>
+            <th>TodayAttendance</th>
+            
+           
+            
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let attendance of attendances">  
+            <td>{{attendance.id}}</td>              
+            <td>{{attendance.student_name}}</td>
+            <td>{{attendance.course_name}}</td>
+            <td>{{attendance.year}}</td>
+            <td>{{attendance.branch}}</td>
+            <td>{{attendance.rollNumber}}</td>
+            <td>{{attendance.attendance_date}}</td>
+            <td>{{attendance.todayAttendance}}</td>
+            <td>
+                <button (click) = "updateAttendance(attendance.id)" class = "btn btn-info"> Update</button>
+                <button (click) = "deleteAttendance(attendance.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <button (click) = "attendanceDetails(attendance.id)" class = "btn btn-info" style="margin-left: 10px"> View</button>
+            </td>
+    
+        </tr>
+    </tbody>
+</table>
+

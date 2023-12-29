@@ -1,0 +1,38 @@
+<div class="col-md-6 offset-md-3">
+    <h3>Update Timetable</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>ID</label>
+            <input type="text" class="form-control" id="id" name="id" [(ngModel)]="timetable.id">
+        </div>
+        <div class="form-group">
+            <label>CourseName</label>
+            <input type="text" class="form-control" id="courseName" name="courseName" [(ngModel)]="timetable.courseName">
+        </div>
+<div class="form-group">
+    <label>Branch</label>
+    <input type="text" class="form-control" id="branch" name="branch" [(ngModel)]="timetable.branch">
+</div>
+<div class="form-group">
+    <label>subject</label>
+    <input type="text" class="form-control" id="subject" name="subject" [(ngModel)]="timetable.subject">
+</div>
+<div class="form-group">
+    <label>DayOfWeek</label>
+    <input type="text" class="form-control" id="dayOfWeek" name="dayOfWeek" [(ngModel)]="timetable.dayOfWeek">
+</div>
+<div class="form-group">
+    <label>StartTime</label>
+    <input type="text" class="form-control" id="startTime" name="startTime" [(ngModel)]="timetable.startTime">
+</div>
+<div class="form-group">
+    <label>endTime</label>
+    <input type="text" class="form-control" id="endTime" name="endTime" [(ngModel)]="timetable.endTime">
+</div>
+
+<button class="btn btn-success" type="submit">Submit</button>
+
+    </form>
+    </div>
+
+

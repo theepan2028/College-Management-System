@@ -1,0 +1,42 @@
+<body>
+    <div class="col-md-6 offset-md-3">
+        <h3>Add Attendance</h3>
+        <form (ngSubmit)="onSubmit()">
+            
+    <div class="form-group">
+        <label>Student_name</label>
+        <input type="text" class="form-control" id="student_name" name="student_name" [(ngModel)]="attendance.student_name">
+    </div>
+   
+       <div class="form-group">
+        <label>Course_name</label>
+        <input type="text" class="form-control" id="course_name" name="course_name" [(ngModel)]="attendance.course_name">
+    </div>
+    <div class="form-group">
+        <label>Year</label>
+        <input type="text" class="form-control" id="year" name="year" [(ngModel)]="attendance.year">
+    </div>
+    <div class="form-group">
+        <label>Branch</label>
+        <input type="text" class="form-control" id="branch" name="branch" [(ngModel)]="attendance.branch">
+    </div>
+    <div class="form-group">
+        <label>RollNumber</label>
+        <input type="text" class="form-control" id="rollNumber" name="rollNumber" [(ngModel)]="attendance.rollNumber">
+    </div>
+    <div class="form-group">
+        <label>Attendance_date</label>
+        <input type="text" class="form-control" id="attendance_date" name="attendance_date" [(ngModel)]="attendance.attendance_date">
+    </div>
+   <div class="form-group">
+        <label>TodayAttendance</label>
+        <input type="text" class="form-control" id="todayAttendance" name="todayAttendance" [(ngModel)]="attendance.todayAttendance">
+    </div>
+   
+    <button class="btn btn-success" type="submit">Submit</button>
+        </form>
+        </div>
+    </body>
+
+
+   

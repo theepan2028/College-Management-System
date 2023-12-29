@@ -1,0 +1,37 @@
+<h2 id="a">Faculty List!!</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Staff Name</th>
+            <th>Gender</th>
+            <th>Mobile No</th>
+            <th>Education</th>
+            <th>Designation</th>
+            <th>Address</th>
+            <th>Email</th>
+            
+           
+            
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let faculty of facultys">  
+            <td>{{faculty.id}}</td>              
+            <td>{{faculty.staffName}}</td>
+            <td>{{faculty.gender}}</td>
+            <td>{{faculty.mobileNo}}</td>
+            <td>{{faculty.education}}</td>
+            <td>{{faculty.designation}}</td>
+            <td>{{faculty.address}}</td>
+            <td>{{faculty.email}}</td>
+            <td>
+                <button (click) = "updateFaculty(faculty.id)" class = "btn btn-info"> Update</button>
+                <button (click) = "deleteFaculty(faculty.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <button (click) = "facultyDetails(faculty.id)" class = "btn btn-info" style="margin-left: 10px"> View</button>
+            </td>
+    
+        </tr>
+    </tbody>
+</table>

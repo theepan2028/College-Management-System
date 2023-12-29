@@ -1,0 +1,38 @@
+<h2 id="a">Timetable List!!</h2>
+<table class="table table-primary table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>CourseName</th>
+            <th>Branch</th>
+            <th>Subject</th>
+            <th>DayOfWeek</th>
+            <th>StartTime</th>
+            <th>EndTime</th>
+            
+            
+           
+            
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let timetable of timetables"> 
+            <td>{{timetable.id}}</td>               
+            <td>{{timetable.courseName}}</td>
+            <td>{{timetable.branch}}</td>
+            <td>{{timetable.subject}}</td>
+            <td>{{timetable.dayOfWeek}}</td>
+            <td>{{timetable.startTime}}</td>
+            <td>{{timetable.endTime}}</td>
+           
+            <td>
+                <button (click) = "updateTimetable(timetable.id)" class = "btn btn-info"> Update</button>
+                <button (click) = "deleteTimetable(timetable.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <button (click) = "timetableDetails(timetable.id)" class = "btn btn-info" style="margin-left: 10px"> View</button>
+            </td>
+    
+        </tr>
+    </tbody>
+</table>
+
