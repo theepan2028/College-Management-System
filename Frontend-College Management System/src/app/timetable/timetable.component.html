@@ -1,0 +1,32 @@
+<h2 id="a">Timetable List!!</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>CourseName</th>
+            <th>Branch</th>
+            <th>Subject</th>
+            <th>DayOfWeek</th>
+            <th>StartTime</th>
+            <th>EndTime</th>
+            
+            
+           
+            
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let timetable of timetables">                
+            <td>{{timetable.courseName}}</td>
+            <td>{{timetable.branch}}</td>
+            <td>{{timetable.subject}}</td>
+            <td>{{timetable.dayOfWeek}}</td>
+            <td>{{timetable.startTime}}</td>
+            <td>{{timetable.endTime}}</td>
+           
+           
+        </tr>
+    </tbody>
+</table>
+
+
