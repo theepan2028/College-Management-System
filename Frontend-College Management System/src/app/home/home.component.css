@@ -1,0 +1,41 @@
+/*p{
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnOl4b3YayyrImFgjvZuBwE4tXACwMTtxpRg&usqp=CAU" ); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    height:400px;
+    margin: 3rem;
+  padding: 2rem; 
+  
+
+}*/
+
+/*.home{
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnOl4b3YayyrImFgjvZuBwE4tXACwMTtxpRg&usqp=CAU");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    height:400px;
+    margin: 3rem;
+  padding: 2rem; 
+  opacity: 0.2;
+}*/
+marquee
+{
+  margin-top: 1rem;
+  background-color: rgb(231, 120, 86);
+  color:whitesmoke;
+  font-size: 25px;
+  border: solid 5px;
+}
+.footer
+{
+   position:absolute;
+    bottom:0;
+    width:100%;
+    height: 50px;
+    background-color:black;
+    text-align: center;
+    color: white;
+    margin-left: auto;
+}

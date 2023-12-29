@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<br>
+<body>
+<marquee direction="left" behavior="alternate"><b> Welcome to Anna University.....</b> </marquee>
+<div class="container mt-4">
+    <br>
+    <br>
+    <div class="card">
+       <!-- <h1 style="text-shadow:2px 2px red;
+        font-style:Italic;font-size:75px ;text-align: center;">
+            Welcome To Login Page</h1>-->
+        <h2>Login</h2>
+        <br>
+        <form>
+
+            <div class="form-group">
+                <label>Email :  </label>
+                <input type="text"[(ngModel)]="email"[ngModelOptions]="{standalone:true}"
+                class="form-control"id="email"placeholder="Email">
+            </div>
+
+            <div class="form-group">
+                <label>Password :    </label>
+                <input type="password"[(ngModel)]="password"[ngModelOptions]="{standalone:true}"
+                class="form-control"id="password"placeholder="Password">
+            </div>
+
+            <button type="submit" class="btn btn-primary"style="margin-left:50px;font-size:25px;"(click)="login()">Login</button>
+            <div class="car-footer text-right" style="font-size:20px;">
+                <small><a routerLink="../admin">Admin Login</a></small>
+            </div>
+            <div class="car-footer text-left" style="font-size:20px;">
+             <small> <a routerLink="../register">Sign Up</a></small>
+            </div>
+            <td>
+                <button (click)="goToLogin()" class="btn btn-danger">Back To Home</button>
+            </td>
+          </form>
+    </div>
+</div> 
+
+
